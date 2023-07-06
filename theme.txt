@@ -1,0 +1,86 @@
+/* eslint-disable react-hooks/rules-of-hooks */
+/* eslint-disable react/react-in-jsx-scope */
+
+import { useCallback } from 'react';
+import {
+  SafeAreaView,
+  StatusBar,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from 'react-native';
+import { Provider } from 'react-redux';
+import { store } from './src/redux/global.store.provider';
+import GetColorScheme from './src/globals/theme';
+
+// test redux implementation
+import { useAppSelector, useAppDispatch } from './src/hooks';
+import { swapTheme } from './src/redux/reducers/theme.reducer';
+
+const colors = GetColorScheme(); // color scheme
+
+const App = () => {
+  return (
+    <SafeAreaView style={styles.container}>
+      <Provider store={store}>
+        <Display />
+      </Provider>
+    </SafeAreaView>
+  );
+};
+
+const Display = () => {
+  const dispatch = useAppDispatch();
+
+  const presentTheme: string = useAppSelector(
+    state => state.themeReducer.theme,
+  );
+
+  const changeDarkTheme = useCallback(async () => {
+    dispatch(swapTheme('dark'));
+  }, []);
+
+  const changeLightTheme = useCallback(async () => {
+    dispatch(swapTheme('light'));
+  }, []);
+
+  return (
+    <View style={styles.container}>
+      <StatusBar barStyle={'light-content'} backgroundColor="#65abc4" />
+      <Text style={styles.textt}> {presentTheme} theme </Text>
+      <TouchableOpacity style={styles.btn} onPress={changeDarkTheme}>
+        <Text style={{ color: '#000', fontSize: 14 }}> Change to dark mode </Text>
+      </TouchableOpacity>
+      <TouchableOpacity style={styles.btn} onPress={changeLightTheme}>
+        <Text style={{ color: '#000', fontSize: 14 }}> Change to light mode </Text>
+      </TouchableOpacity>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: colors.backgroundColor,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  btn: {
+    width: 200,
+    height: 60,
+    borderRadius: 20,
+    borderColor: '#230000',
+    borderWidth: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexDirection: 'row',
+    marginTop: 20,
+    backgroundColor: colors.backgroundColor,
+  },
+  textt: {
+    color: colors.textColor,
+  }
+});
+
+export default App;

@@ -1,24 +1,23 @@
-type ThemeColor = {
-  primary: string;
-  secondary: string;
-  backgroundColor: string;
-  textColor: string;
-};
-
+import { store } from '../redux/global.store.provider';
 // dark theme colors
-const darkTheme: ThemeColor = {
-  primary: '',
-  secondary: '',
+const darkTheme = {
   backgroundColor: '#336699',
   textColor: '#fff',
 };
 
 // light theme color
-const lightTheme: ThemeColor = {
-  primary: '#336699',
-  secondary: '#36ac',
-  backgroundColor: '#fff',
+const lightTheme = {
+  backgroundColor: '#ffffff',
   textColor: '#336699',
 };
 
-export { darkTheme, lightTheme };
+const GetColorScheme = () => {
+  const themeStore = store.getState().themeReducer.theme;
+  if (themeStore === 'light') {
+    return lightTheme;
+  } else {
+    return darkTheme;
+  }
+};
+
+export default GetColorScheme;
