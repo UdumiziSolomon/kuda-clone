@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 /* eslint-disable react/react-in-jsx-scope */
 
-import { useCallback } from "react";
+import { useCallback } from 'react';
 import {
   SafeAreaView,
   StatusBar,
@@ -20,7 +20,8 @@ const App = () => {
   const presentTheme: string = useAppSelector(state => state.theme.theme);
 
   const changeTheme = useCallback(() => {
-    useAppDispatch(swapTheme('dark'));
+    let themeIDX = 'dark';
+    useAppDispatch(swapTheme(themeIDX));
   }, []);
 
   return (
