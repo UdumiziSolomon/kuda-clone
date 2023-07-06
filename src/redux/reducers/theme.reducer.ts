@@ -15,12 +15,8 @@ export const ThemeSlice = createSlice({
   reducers: {
     swapTheme: (state: ThemeState, action: PayloadAction<string>) => {
       state.theme = action.payload;
-    },
-  },
-  extraReducers: (builder: any) => {
-    builder.addCase(swapTheme, (action: PayloadAction<string>) => {
       AsyncStorage.setItem('theme', JSON.stringify(action.payload));
-    });
+    },
   },
 });
 

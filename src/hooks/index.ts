@@ -1,4 +1,4 @@
-import { useAppDispatch, useAppSelector } from './UseReduxActions';
+import { useAppDispatch, useAppSelector } from './useReduxActions';
 
 //Exports
 export { useAppDispatch, useAppSelector };
