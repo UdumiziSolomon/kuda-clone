@@ -1,0 +1,33 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/Circular.ttf",
+      "sha1": "53e8b5c172c347b9c327673a1522c566a52e6657"
+    },
+    {
+      "path": "src/assets/fonts/Gotham.otf",
+      "sha1": "a3cdcc0c2ff9c6289ccc5ae1bb9eade3395626da"
+    },
+    {
+      "path": "src/assets/fonts/Jose.ttf",
+      "sha1": "16e7e4b48d1c7fe6e1d66a49dd9bcedb5bbf0a82"
+    },
+    {
+      "path": "src/assets/fonts/Montserrat.ttf",
+      "sha1": "1914bc1981e6ceceadb2f6d72455b4e89e04965c"
+    },
+    {
+      "path": "src/assets/fonts/Sofia Pro.otf",
+      "sha1": "5bb36b9218ece13431f76663d000433a9b37cba1"
+    },
+    {
+      "path": "src/assets/fonts/hellix.ttf",
+      "sha1": "42f1268c7f5df48421ee558b80d69aab8aece1f2"
+    },
+    {
+      "path": "src/assets/fonts/hellixbold.ttf",
+      "sha1": "1b0c5873ee0aae874e591a72b95b12b0b825eba1"
+    }
+  ]
+}

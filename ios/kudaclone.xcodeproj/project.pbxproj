@@ -14,6 +14,13 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-kudaclone-kudacloneTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-kudaclone-kudacloneTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		5884130FC9E94397B5787F0D /* Gotham.otf in Resources */ = {isa = PBXBuildFile; fileRef = D99AC398D34F44729DF6B624 /* Gotham.otf */; };
+		64AEF49D42B8481EB7E9CBBB /* Sofia Pro.otf in Resources */ = {isa = PBXBuildFile; fileRef = 35C625EEC0244C93B0B4FFED /* Sofia Pro.otf */; };
+		8EC814FFF9754EEC8AEA5126 /* Circular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F944F25A8AE3426C999DD371 /* Circular.ttf */; };
+		C6E0025B9E87404FA30D4919 /* Jose.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45A1BE195D3C47E0A542D8B9 /* Jose.ttf */; };
+		C63EEE7AF5C74448A1401083 /* Montserrat.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5E14BF93F9C14214BC6A2AEA /* Montserrat.ttf */; };
+		F2D8590D93244DEEB5E79C72 /* hellix.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4214D4BF2A3C4772B4C54D21 /* hellix.ttf */; };
+		6FD21C6F21F44E86A176CBEC /* hellixbold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E3F94721797349C5A5BEF735 /* hellixbold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,13 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = kudaclone/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-kudaclone-kudacloneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kudaclone-kudacloneTests.release.xcconfig"; path = "Target Support Files/Pods-kudaclone-kudacloneTests/Pods-kudaclone-kudacloneTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		D99AC398D34F44729DF6B624 /* Gotham.otf */ = {isa = PBXFileReference; name = "Gotham.otf"; path = "../src/assets/fonts/Gotham.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		35C625EEC0244C93B0B4FFED /* Sofia Pro.otf */ = {isa = PBXFileReference; name = "Sofia Pro.otf"; path = "../src/assets/fonts/Sofia Pro.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F944F25A8AE3426C999DD371 /* Circular.ttf */ = {isa = PBXFileReference; name = "Circular.ttf"; path = "../src/assets/fonts/Circular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		45A1BE195D3C47E0A542D8B9 /* Jose.ttf */ = {isa = PBXFileReference; name = "Jose.ttf"; path = "../src/assets/fonts/Jose.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5E14BF93F9C14214BC6A2AEA /* Montserrat.ttf */ = {isa = PBXFileReference; name = "Montserrat.ttf"; path = "../src/assets/fonts/Montserrat.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4214D4BF2A3C4772B4C54D21 /* hellix.ttf */ = {isa = PBXFileReference; name = "hellix.ttf"; path = "../src/assets/fonts/hellix.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E3F94721797349C5A5BEF735 /* hellixbold.ttf */ = {isa = PBXFileReference; name = "hellixbold.ttf"; path = "../src/assets/fonts/hellixbold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +136,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				40A5DAABD8E446B38921CA87 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -147,6 +162,21 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		40A5DAABD8E446B38921CA87 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				D99AC398D34F44729DF6B624 /* Gotham.otf */,
+				35C625EEC0244C93B0B4FFED /* Sofia Pro.otf */,
+				F944F25A8AE3426C999DD371 /* Circular.ttf */,
+				45A1BE195D3C47E0A542D8B9 /* Jose.ttf */,
+				5E14BF93F9C14214BC6A2AEA /* Montserrat.ttf */,
+				4214D4BF2A3C4772B4C54D21 /* hellix.ttf */,
+				E3F94721797349C5A5BEF735 /* hellixbold.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -244,6 +274,13 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				5884130FC9E94397B5787F0D /* Gotham.otf in Resources */,
+				64AEF49D42B8481EB7E9CBBB /* Sofia Pro.otf in Resources */,
+				8EC814FFF9754EEC8AEA5126 /* Circular.ttf in Resources */,
+				C6E0025B9E87404FA30D4919 /* Jose.ttf in Resources */,
+				C63EEE7AF5C74448A1401083 /* Montserrat.ttf in Resources */,
+				F2D8590D93244DEEB5E79C72 /* hellix.ttf in Resources */,
+				6FD21C6F21F44E86A176CBEC /* hellixbold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

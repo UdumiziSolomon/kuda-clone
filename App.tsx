@@ -18,15 +18,36 @@ const App = () => {
 const Display = () => {
   return (
     <View style={styles.container}>
-      <StatusBar barStyle={'light-content'} backgroundColor="#504b4b" />
+      <StatusBar barStyle={'light-content'} backgroundColor="#000000" />
       <Text
         style={{
           color: '#fff',
           textAlign: 'center',
-          marginTop: 200,
-          fontSize: 40,
+          marginTop: 20,
+          fontSize: 28,
+          fontFamily: 'Montserrat',
         }}>
-        KUDA CLONE
+        Kuda Clone Application
+      </Text>
+      <Text
+        style={{
+          color: '#fff',
+          textAlign: 'center',
+          marginTop: 2,
+          fontSize: 23,
+          fontFamily: 'hellixbold',
+        }}>
+        Bank of the freeborns
+      </Text>
+      <Text
+        style={{
+          color: '#fff',
+          textAlign: 'center',
+          marginTop: 10,
+          fontSize: 15,
+          fontFamily: 'Sofia Pro',
+        }}>
+        Banking system on another level, Register and start enjoy seamless transactions
       </Text>
     </View>
   );
@@ -35,6 +56,9 @@ const Display = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: '#000',
+    paddingHorizontal: 5,
+    paddingVertical: 20,
   },
 });
 
