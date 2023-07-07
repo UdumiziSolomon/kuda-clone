@@ -24,7 +24,7 @@ const Onboard = () => {
           marginTop: 3,
           textAlign: 'center',
         }}>
-        This is the onboarding screen.... Start writing your auth stacks
+        This is the Onboarding screen.... Start writing your auth stacks
       </Text>
     </View>
   );

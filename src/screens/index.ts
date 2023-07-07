@@ -1,7 +1,7 @@
 // imports
 
 //  APP SCREEN
-import Home from './app/home';
+import Welcome from './app/welcome';
 
 // AUTH SCREEN
 import Onboard from './auth/onboard';
@@ -9,7 +9,7 @@ import Onboard from './auth/onboard';
 // exports
 
 // APP SCREEN
-export { Home };
+export { Welcome };
 
 // AUTH SCREEN
 export { Onboard };

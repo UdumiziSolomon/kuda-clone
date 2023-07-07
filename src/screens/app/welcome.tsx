@@ -3,7 +3,7 @@
 import { View, Text, StatusBar } from 'react-native';
 import React from 'react';
 
-const Home = () => {
+const Welcome = () => {
   return (
     <View>
       <StatusBar backgroundColor={'#fff'} barStyle={'dark-content'} />
@@ -30,4 +30,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Welcome;
