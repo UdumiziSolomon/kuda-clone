@@ -3,7 +3,6 @@ import type { PayloadAction } from '@reduxjs/toolkit';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 type ThemeState = { theme: string };
-
 const initialState: ThemeState = {
   theme: 'light',
 };

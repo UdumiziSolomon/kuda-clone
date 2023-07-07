@@ -2,10 +2,10 @@ import { configureStore } from '@reduxjs/toolkit';
 import logger from 'redux-logger';
 
 // reducers
-import { themeReducer } from './index';
+import { themeReducer, tokenReducer } from './index';
 
 export const store = configureStore({
-  reducer: { themeReducer },
+  reducer: { themeReducer, tokenReducer },
   middleware: getDefaultMiddleware => getDefaultMiddleware().concat(logger),
 });
 

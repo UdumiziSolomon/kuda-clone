@@ -1,14 +1,14 @@
 import { store } from '../redux/global.store.provider';
 // dark theme colors
 const darkTheme = {
-  backgroundColor: '#336699',
+  backgroundColor: '#000',
   textColor: '#fff',
 };
 
 // light theme color
 const lightTheme = {
   backgroundColor: '#ffffff',
-  textColor: '#336699',
+  textColor: '#000',
 };
 
 const GetColorScheme = () => {

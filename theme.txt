@@ -1,26 +1,26 @@
-/* eslint-disable react-hooks/rules-of-hooks */
+/* eslint-disable react-native/no-inline-styles */
 /* eslint-disable react/react-in-jsx-scope */
-
 import { useCallback } from 'react';
 import {
   SafeAreaView,
   StatusBar,
   StyleSheet,
   Text,
-  TouchableOpacity,
   View,
+  TouchableOpacity,
 } from 'react-native';
 import { Provider } from 'react-redux';
 import { store } from './src/redux/global.store.provider';
+import IsAppLoaded from './src/hooks/useApploader';
+import { useAppDispatch, useAppSelector } from './src/hooks';
+import { swapTheme } from './src/redux/reducers/theme.reducer';
 import GetColorScheme from './src/globals/theme';
 
-// test redux implementation
-import { useAppSelector, useAppDispatch } from './src/hooks';
-import { swapTheme } from './src/redux/reducers/theme.reducer';
-
-const colors = GetColorScheme(); // color scheme
-
 const App = () => {
+  const isLoaded = IsAppLoaded();
+  if (!isLoaded) {
+    return null;
+  }
   return (
     <SafeAreaView style={styles.container}>
       <Provider store={store}>
@@ -32,28 +32,75 @@ const App = () => {
 
 const Display = () => {
   const dispatch = useAppDispatch();
+  const colors = GetColorScheme();
 
   const presentTheme: string = useAppSelector(
     state => state.themeReducer.theme,
   );
 
+  const token_stat: string | null = useAppSelector(
+    state => state.tokenReducer.token,
+  );
+
   const changeDarkTheme = useCallback(async () => {
     dispatch(swapTheme('dark'));
-  }, []);
+  }, [dispatch]);
 
   const changeLightTheme = useCallback(async () => {
     dispatch(swapTheme('light'));
-  }, []);
+  }, [dispatch]);
+
+  console.log(token_stat);
 
   return (
-    <View style={styles.container}>
-      <StatusBar barStyle={'light-content'} backgroundColor="#65abc4" />
-      <Text style={styles.textt}> {presentTheme} theme </Text>
+    <View style={[styles.container, { backgroundColor: colors.backgroundColor }]}>
+      <StatusBar barStyle={'light-content'} backgroundColor="#000000" />
+      <Text
+        style={{
+          color: colors.textColor,
+          textAlign: 'center',
+          marginTop: 20,
+          fontSize: 28,
+          fontFamily: 'Montserrat',
+        }}>
+        Kuda Clone Application
+      </Text>
+      <Text
+        style={{
+          color: colors.textColor,
+          textAlign: 'center',
+          marginTop: 2,
+          fontSize: 23,
+          fontFamily: 'hellixbold',
+        }}>
+        Bank of the freeborns
+      </Text>
+      <Text
+        style={{
+          color: colors.textColor,
+          textAlign: 'center',
+          marginTop: 10,
+          fontSize: 15,
+          fontFamily: 'Sofia Pro',
+        }}>
+        Banking system on another level, Register and start enjoy seamless
+        transactions
+      </Text>
+      <Text
+        style={{
+          color: colors.textColor,
+          textAlign: 'center',
+          marginTop: 40,
+          fontSize: 23,
+          fontFamily: 'hellixbold',
+        }}>
+        {presentTheme} theme
+      </Text>
       <TouchableOpacity style={styles.btn} onPress={changeDarkTheme}>
-        <Text style={{ color: '#000', fontSize: 14 }}> Change to dark mode </Text>
+        <Text style={{ color: colors.textColor, fontSize: 14 }}> Change to dark mode </Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.btn} onPress={changeLightTheme}>
-        <Text style={{ color: '#000', fontSize: 14 }}> Change to light mode </Text>
+        <Text style={{ color: colors.textColor, fontSize: 14 }}> Change to light mode </Text>
       </TouchableOpacity>
     </View>
   );
@@ -62,25 +109,22 @@ const Display = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: colors.backgroundColor,
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: '#000',
+    paddingHorizontal: 5,
+    paddingVertical: 20,
   },
   btn: {
     width: 200,
     height: 60,
     borderRadius: 20,
-    borderColor: '#230000',
-    borderWidth: 1,
+    borderColor: '#9c9c9c',
+    borderWidth: 2,
     alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'row',
     marginTop: 20,
-    backgroundColor: colors.backgroundColor,
+    alignSelf: 'center',
   },
-  textt: {
-    color: colors.textColor,
-  }
 });
 
 export default App;
