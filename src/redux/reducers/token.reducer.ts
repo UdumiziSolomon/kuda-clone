@@ -7,7 +7,7 @@ type TokenValue = {
 };
 
 const initialState: TokenValue = {
-  token: 'null',
+  token: null,
 };
 
 export const TokenSlice = createSlice({
