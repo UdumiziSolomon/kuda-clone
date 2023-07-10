@@ -1,4 +1,7 @@
+/* eslint-disable react-native/no-inline-styles */
 /* eslint-disable react/react-in-jsx-scope */
+// import { GestureHandlerRootView } from 'react-native-gesture-handler';
+// import 'react-native-gesture-handler';
 import { SafeAreaView, StyleSheet } from 'react-native';
 import { Provider } from 'react-redux';
 import { store } from './src/redux/global.store.provider';
@@ -13,11 +16,13 @@ const App = () => {
   }
   return (
     <SafeAreaView style={styles.container}>
+      {/* <GestureHandlerRootView style={{ flex: 1 }}> */}
       <Provider store={store}>
         <NavigationContainer>
           <MainNavigation />
         </NavigationContainer>
       </Provider>
+      {/* </GestureHandlerRootView> */}
     </SafeAreaView>
   );
 };

@@ -4,7 +4,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 type ThemeState = { theme: string };
 const initialState: ThemeState = {
-  theme: 'light',
+  theme: 'dark',
 };
 
 // slice for theme
