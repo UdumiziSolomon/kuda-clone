@@ -46,7 +46,7 @@ const AppTab = () => {
         tabBarStyle: {
           backgroundColor: colors.tabBarBackground,
           height: ms(60),
-          paddingTop: ms(5),
+          paddingTop: ms(8),
         },
       }}>
       <Screen
@@ -65,7 +65,7 @@ const AppTab = () => {
               style={{
                 fontFamily: 'Sofia Pro',
                 fontSize: ms(10),
-                paddingBottom: ms(10),
+                paddingBottom: ms(12),
                 color: focused ? colors.tabTextActive : colors.tabTextInActive,
               }}>
               Home
@@ -89,7 +89,7 @@ const AppTab = () => {
               style={{
                 fontFamily: 'Sofia Pro',
                 fontSize: ms(10),
-                paddingBottom: ms(10),
+                paddingBottom: ms(12),
                 color: focused ? colors.tabTextActive : colors.tabTextInActive,
               }}>
               Pay
@@ -113,7 +113,7 @@ const AppTab = () => {
               style={{
                 fontFamily: 'Sofia Pro',
                 fontSize: ms(10),
-                paddingBottom: ms(10),
+                paddingBottom: ms(12),
                 color: focused ? colors.tabTextActive : colors.tabTextInActive,
               }}>
               Invest
@@ -137,7 +137,7 @@ const AppTab = () => {
               style={{
                 fontFamily: 'Sofia Pro',
                 fontSize: ms(10),
-                paddingBottom: ms(10),
+                paddingBottom: ms(12),
                 color: focused ? colors.tabTextActive : colors.tabTextInActive,
               }}>
               Cards
@@ -161,7 +161,7 @@ const AppTab = () => {
               style={{
                 fontFamily: 'Sofia Pro',
                 fontSize: ms(10),
-                paddingBottom: ms(10),
+                paddingBottom: ms(12),
                 color: focused ? colors.tabTextActive : colors.tabTextInActive,
               }}>
               More
