@@ -85,12 +85,11 @@ const styles = ScaledSheet.create({
     alignItems: 'center',
   },
   topText: {
-    fontFamily: 'Sofia Pro',
-    fontSize: ms(19),
+    fontFamily: 'springbold',
+    fontSize: ms(17),
     color: '#fff',
-    paddingTop: ms(25),
+    paddingTop: ms(40),
     textAlign: 'center',
-    letterSpacing: ms(0.4),
   },
   scrollContainer: {
     flexGrow: 1,
@@ -110,7 +109,7 @@ const styles = ScaledSheet.create({
     marginBottom: ms(20),
   },
   buttonText: {
-    fontFamily: 'Sofia Pro',
+    fontFamily: 'spring',
     fontSize: ms(14),
     color: '#eee',
   },
@@ -127,13 +126,13 @@ const styles = ScaledSheet.create({
     marginLeft: ms(15),
   },
   textLayerText: {
-    fontFamily: 'hellixbold',
-    fontSize: ms(16.5),
+    fontFamily: 'spring',
+    fontSize: ms(15.5),
     color: '#eee',
   },
   textLayerSubText: {
     fontFamily: 'Sofia Pro',
-    fontSize: ms(13),
+    fontSize: ms(12.5),
     color: '#eee',
     lineHeight: ms(15),
     marginTop: ms(4),

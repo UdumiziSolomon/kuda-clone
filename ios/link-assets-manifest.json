@@ -6,8 +6,16 @@
       "sha1": "53e8b5c172c347b9c327673a1522c566a52e6657"
     },
     {
+      "path": "src/assets/fonts/DMSans.ttf",
+      "sha1": "ef47944cd61dfd6889e7f0bb7596d87849d0e6cb"
+    },
+    {
       "path": "src/assets/fonts/Gotham.otf",
       "sha1": "a3cdcc0c2ff9c6289ccc5ae1bb9eade3395626da"
+    },
+    {
+      "path": "src/assets/fonts/Interstate.ttf",
+      "sha1": "f04ec75d55c632d2ca12fe75d8924a6ecb4923c1"
     },
     {
       "path": "src/assets/fonts/Jose.ttf",
@@ -28,6 +36,50 @@
     {
       "path": "src/assets/fonts/hellixbold.ttf",
       "sha1": "1b0c5873ee0aae874e591a72b95b12b0b825eba1"
+    },
+    {
+      "path": "src/assets/fonts/product.ttf",
+      "sha1": "81f147ccffae41f7be8aff83d62f435a06d1292a"
+    },
+    {
+      "path": "src/assets/fonts/spring.otf",
+      "sha1": "676fa41b0d5df72ca464b010742644ae31f2f2c0"
+    },
+    {
+      "path": "src/assets/fonts/springbold.otf",
+      "sha1": "f686168103030f74f5a5380fc1c080406eda227c"
+    },
+    {
+      "path": "src/assets/images/kuda.png",
+      "sha1": "649ecd69510e62c99b36a950e53fbc791959e3c3"
+    },
+    {
+      "path": "src/assets/images/kuda_bank.svg",
+      "sha1": "9d12ecdd7f03f42a70f86587a5bfc25085a6d34f"
+    },
+    {
+      "path": "src/assets/images/kudaicon.png",
+      "sha1": "fe103fe62e83979308d0fd734b24409f8ca4510c"
+    },
+    {
+      "path": "src/assets/images/kudaicon.svg",
+      "sha1": "c26e1e07612a360858a5d7f03aa27b06f2a0ba10"
+    },
+    {
+      "path": "src/assets/images/mastercard (1).svg",
+      "sha1": "c81c17a4d7688515f63cd371ee23303d6d3655c9"
+    },
+    {
+      "path": "src/assets/images/mastercard.svg",
+      "sha1": "b0d80a4936347f05dd25365973989be84ed60143"
+    },
+    {
+      "path": "src/assets/images/stocks.svg",
+      "sha1": "7398ce5ed94197da2d24efeeec3a84738e20547d"
+    },
+    {
+      "path": "src/assets/images/visa.svg",
+      "sha1": "ab78851623b47925e33a0802f9e020ffcb0612a4"
     }
   ]
 }

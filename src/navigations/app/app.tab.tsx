@@ -57,7 +57,7 @@ const AppTab = () => {
             <MaterialCommunityIcons
               name="home-analytics"
               color={focused ? colors.tabIconActive : colors.tabIconInActive}
-              size={ms(29)}
+              size={ms(25)}
             />
           ),
           tabBarLabel: ({ focused }: any) => (
@@ -81,7 +81,7 @@ const AppTab = () => {
             <Feather
               name="send"
               color={focused ? colors.tabIconActive : colors.tabIconInActive}
-              size={ms(24)}
+              size={ms(21)}
             />
           ),
           tabBarLabel: ({ focused }: any) => (
@@ -105,7 +105,7 @@ const AppTab = () => {
             <MaterialCommunityIcons
               name="signal-cellular-outline"
               color={focused ? colors.tabIconActive : colors.tabIconInActive}
-              size={ms(27)}
+              size={ms(24)}
             />
           ),
           tabBarLabel: ({ focused }: any) => (
@@ -129,7 +129,7 @@ const AppTab = () => {
             <MaterialCommunityIcons
               name="credit-card-outline"
               color={focused ? colors.tabIconActive : colors.tabIconInActive}
-              size={ms(27)}
+              size={ms(24)}
             />
           ),
           tabBarLabel: ({ focused }: any) => (
@@ -153,7 +153,7 @@ const AppTab = () => {
             <MaterialCommunityIcons
               name="dots-grid"
               color={focused ? colors.tabIconActive : colors.tabIconInActive}
-              size={ms(27)}
+              size={ms(24)}
             />
           ),
           tabBarLabel: ({ focused }: any) => (

@@ -18,7 +18,7 @@ import { AppNavigationParamList } from '../../../navigations/app/app.navigation'
 
 import { numbers } from './numbers';
 
-const image = require('../../../assets/images/kuda.png');
+const image = require('../../../assets/images/img.png');
 
 const { width, height } = Dimensions.get('window');
 
@@ -89,7 +89,7 @@ const Welcome: FC = () => {
         <ImageBackground
           source={image}
           style={styles.imageLayer}
-          resizeMode="contain"
+          resizeMode="cover"
         />
       </View>
       <Text style={styles.topText}> Welcome back </Text>
@@ -128,10 +128,12 @@ const Welcome: FC = () => {
               )}
               {fingerStat && num.id === 'del' && (
                 <Pressable style={styles.fingerLayer}>
-                  <FontAwesome5
-                    name="fingerprint"
-                    style={styles.fingerLayerIcon}
-                  />
+                  <View style={styles.backlay}>
+                    <FontAwesome5
+                      name="fingerprint"
+                      style={styles.fingerLayerIcon}
+                    />
+                  </View>
                 </Pressable>
               )}
             </View>
@@ -247,20 +249,34 @@ const styles = ScaledSheet.create({
   },
   signOut: {
     fontFamily: 'Montserrat',
-    color: '#7fb779',
+    color: '#65a85d',
   },
   fingerLayer: {
-    backgroundColor: '#40196d',
-    width: ms(55),
-    height: ms(55),
+    backgroundColor: '#5e9867',
+    width: ms(53),
+    height: ms(53),
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: ms(100),
     position: 'relative',
+    zIndex: 2,
   },
   fingerLayerIcon: {
     color: '#fff',
-    fontSize: ms(23),
+    fontSize: ms(25),
+  },
+  backlay: {
+    backgroundColor: '#40196d',
+    width: ms(54),
+    height: ms(54),
+    position: 'absolute',
+    borderRadius: ms(100),
+    alignItems: 'center',
+    justifyContent: 'center',
+    left: ms(-4),
+    right: ms(-1),
+    bottom: ms(1),
+    zIndex: 1,
   },
   popupLayer: {
     flex: 1,
