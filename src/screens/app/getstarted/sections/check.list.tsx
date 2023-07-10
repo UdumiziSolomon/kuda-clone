@@ -37,7 +37,7 @@ const styles = ScaledSheet.create({
     marginVertical: ms(4),
   },
   checkText: {
-    fontFamily: 'spring',
+    fontFamily: 'springbold',
     fontSize: ms(13.5),
     color: '#eee',
   },

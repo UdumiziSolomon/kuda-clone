@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable react-native/no-inline-styles */
 /* eslint-disable @typescript-eslint/no-shadow */
 import { Text } from 'react-native';
@@ -8,13 +9,12 @@ import { ms } from 'react-native-size-matters';
 import Feather from 'react-native-vector-icons/Feather';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
-const colors = GetColorScheme();
-
 import HomeStack from './home.stack';
 import PayStack from './pay.stack';
 import InvestStack from './invest.stack';
 import CardStack from './card.stack';
 import MoreStack from './more.stack';
+import { useAppSelector } from '../../hooks';
 
 export type AppTabParamList = {
   HomeStack: undefined;
@@ -36,6 +36,11 @@ enum AppEnum {
 const AppTab = () => {
   const Navigator = AppTabNavigator.Navigator;
   const Screen = AppTabNavigator.Screen;
+  const colors = GetColorScheme();
+
+  const presentTheme: string = useAppSelector(
+    state => state.themeReducer.theme,
+  );
 
   return (
     <Navigator
@@ -47,6 +52,7 @@ const AppTab = () => {
           backgroundColor: colors.tabBarBackground,
           height: ms(60),
           paddingTop: ms(8),
+          borderTopColor: colors.backgroundColor,
         },
       }}>
       <Screen

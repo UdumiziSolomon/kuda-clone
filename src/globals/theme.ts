@@ -8,6 +8,9 @@ const darkTheme = {
   tabIconInActive: '#aaa',
   tabTextActive: '#fff',
   tabTextInActive: '#aaa',
+  dark: true,
+  iconOverlay: '#222',
+  layerOverlay: '#111',
 };
 
 // light theme color
@@ -19,6 +22,9 @@ const lightTheme = {
   tabIconInActive: '#aaa',
   tabTextActive: '#000',
   tabTextInActive: '#aaa',
+  dark: false,
+  iconOverlay: '#eee',
+  layerOverlay: '#f5f5f5',
 };
 
 const GetColorScheme = () => {
