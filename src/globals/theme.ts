@@ -10,7 +10,7 @@ const darkTheme = {
   tabTextInActive: '#aaa',
   dark: true,
   iconOverlay: '#222',
-  layerOverlay: '#111',
+  layerOverlay: '#222',
 };
 
 // light theme color

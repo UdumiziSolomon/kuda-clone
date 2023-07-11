@@ -18,7 +18,7 @@ import { AppNavigationParamList } from '../../../navigations/app/app.navigation'
 
 import { numbers } from './numbers';
 
-const image = require('../../../assets/images/img.png');
+const image = require('../../../assets/images/kuda.png');
 
 const { width, height } = Dimensions.get('window');
 
