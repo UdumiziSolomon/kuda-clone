@@ -1,21 +1,36 @@
-import { StyleSheet, Text, View, Dimensions } from 'react-native';
-import React from 'react';
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import { Text, View, Dimensions } from 'react-native';
+import React, { FC } from 'react';
+import { ScaledSheet, ms } from 'react-native-size-matters';
+import GetColorScheme from '../../../../globals/theme';
+import { useAppSelector } from '../../../../hooks';
 
 const { width, height } = Dimensions.get('window');
 
-const Spend = () => {
+const Spend: FC = () => {
+  const colors = GetColorScheme();
+  const presentTheme: string = useAppSelector(
+    state => state.themeReducer.theme,
+  );
   return (
     <View style={styles.container}>
-      <Text>Spend</Text>
+      <Text style={[styles.topText, { color: colors.textColor }]}>
+        Nigerian Naira
+      </Text>
     </View>
   );
 };
 
 export default Spend;
 
-const styles = StyleSheet.create({
+const styles = ScaledSheet.create({
   container: {
     width: width - 20,
-    flex: 1, 
+    flex: 1,
+    paddingVertical: ms(10),
   },
-})
+  topText: {
+    fontSize: ms(14),
+    fontFamily: 'spring',
+  },
+});

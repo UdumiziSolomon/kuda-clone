@@ -35,7 +35,6 @@ const Home = () => {
   const handleScroll = (event: NativeSyntheticEvent<NativeScrollEvent>) => {
     const { contentOffset } = event.nativeEvent;
     const index = Math.round(contentOffset.x / width);
-    console.log(index);
     setCurrIndex(index);
   };
 
@@ -146,8 +145,8 @@ const styles = ScaledSheet.create({
   },
   screenLayer: {
     marginHorizontal: ms(5),
-    paddingVertical: ms(8),
-    paddingHorizontal: ms(20),
+    paddingVertical: ms(9),
+    paddingHorizontal: ms(18),
     borderRadius: ms(5),
   },
   screenLayerText: {

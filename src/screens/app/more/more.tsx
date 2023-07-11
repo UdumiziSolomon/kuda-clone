@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-/* eslint-disable react-native/no-inline-styles */
+
 import { Text, View, StatusBar, Dimensions, Switch } from 'react-native';
 import React, { useCallback, useState } from 'react';
 import { ScaledSheet, ms } from 'react-native-size-matters';
