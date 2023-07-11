@@ -9,6 +9,8 @@ import {
   Image,
   Dimensions,
   FlatList,
+  NativeSyntheticEvent,
+  NativeScrollEvent,
 } from 'react-native';
 import React, { useState, useRef } from 'react';
 import { ScaledSheet, ms } from 'react-native-size-matters';
@@ -28,16 +30,16 @@ const Home = () => {
   );
 
   const [currIndex, setCurrIndex] = useState(0);
-  const ref = useRef(null);
+  const ref = useRef<FlatList<any>>(null);
 
-  const handleScroll = (event) => {
+  const handleScroll = (event: NativeSyntheticEvent<NativeScrollEvent>) => {
     const { contentOffset } = event.nativeEvent;
     const index = Math.round(contentOffset.x / width);
     console.log(index);
     setCurrIndex(index);
   };
 
-  const setIndex = index => {
+  const setIndex = (index: number) => {
     if (ref.current) {
       setCurrIndex(index);
       ref.current.scrollToIndex({ index, animated: false });
