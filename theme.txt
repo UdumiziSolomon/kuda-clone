@@ -31,8 +31,8 @@ const App = () => {
 };
 
 const Display = () => {
-  const dispatch = useAppDispatch();
   const colors = GetColorScheme();
+  const dispatch = useAppDispatch();
 
   const presentTheme: string = useAppSelector(
     state => state.themeReducer.theme,

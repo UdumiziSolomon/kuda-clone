@@ -4,16 +4,17 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { useAppSelector } from '../hooks';
 
 // screen imports
-import { Onboard, Home } from '../screens';
+import { Onboard } from '../screens';
+import { AppNavigation } from './';
 
 type MainNavigationParamList = {
   Onboard: undefined;
-  Home: undefined;
+  AppNavigation: undefined;
 };
 
 enum MainEnum {
   Onboard = 'Onboard',
-  Home = 'Home',
+  AppNavigation = 'AppNavigation',
 }
 
 const MainNavigator = createNativeStackNavigator<MainNavigationParamList>();
@@ -34,7 +35,7 @@ const MainNavigation = () => {
       {token === null ? (
         <Screen name={MainEnum.Onboard} component={Onboard} />
       ) : (
-        <Screen name={MainEnum.Home} component={Home} />
+        <Screen name={MainEnum.AppNavigation} component={AppNavigation} />
       )}
     </Navigator>
   );
